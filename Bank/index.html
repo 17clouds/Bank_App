@@ -13,11 +13,14 @@
 
     <template id="login">
         <h1>Bank App</h1>
-
-        <input id="username" name="username" type="text">
-
         <section>
-            <a href="/dashboard" onclick="onLinkClick(event)" >Login</a>
+            <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text">
+            <button>Login</button>
+        </form>
+<!--            <a href="/dashboard" onclick="onLinkClick(event)" >Login</a>-->
         </section>
     </template>
 
