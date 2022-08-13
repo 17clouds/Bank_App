@@ -35,3 +35,9 @@ function onLinkClick(event) {
 window.onpopstate = () => updateRoute();
 updateRoute();
 
+function register() {
+    const registerForm = document.getElementById('registerForm');
+    const formData = new FormData(registerForm);
+    const data = Object.fromEntries(formData);
+    const jsonData = JSON.stringify(data);
+}
