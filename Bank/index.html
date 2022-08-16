@@ -6,45 +6,45 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/bg.css">
     <title>Bank App</title>
 </head>
 <body>
     <div id="app">Loading...</div>
 
-    <template id="login">
-        <h1>Bank App</h1>
-        <section>
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="username">Username</label>
-                <input id="username" name="username" type="text">
-                <button>Login</button>
-                <a href="/dashboard" onclick="onLinkClick(event)" >Login</a>
-            </form>
+    <template class="login" id="login">
+        <div class="login">
+            <section>
+                <h1>Bank App</h1>
 
-            <hr/>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text">
+                    <button>Login</button>
+                    <a href="/dashboard" onclick="onLinkClick(event)" >Login</a>
+                </form>
 
-            <h2>Register</h2>
-            <form id="registerForm" action="javascript:register()">
-                <label for="user">Username (required)</label>
-                <input id="user" name="user" type="text" maxlength="20" required>
+                <h2>Register</h2>
+                <form id="registerForm" action="javascript:register()">
+                    <label for="user">Username (required)</label>
+                    <input id="user" name="user" type="text" maxlength="20" required>
 
-                <label for="currency">Currency (required)</label>
-                <input id="currency" name="currency" type="text" value="$" maxlength="5" required>
+                    <label for="currency">Currency (required)</label>
+                    <input id="currency" name="currency" type="text" value="$" maxlength="5" required>
 
-                <label for="description">Description</label>
-                <input id="description" name="description" type="text" maxlength="100">
+                    <label for="description">Description</label>
+                    <input id="description" name="description" type="text" maxlength="100">
 
-                <label for="balance">Current balance</label>
-                <input id="balance" name="balance" type="number" value="0">
+                    <label for="balance">Current balance</label>
+                    <input id="balance" name="balance" type="number" value="0">
 
-                <button>Register</button>
-            </form>
-
-        </section>
+                    <button>Register</button>
+                </form>
+            </section>
+        </div>
     </template>
-
-
 
     <template id="dashboard">
         <header>
@@ -78,5 +78,16 @@
             <li>300$</li>
         </ul>
     </template>
+
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
+
 </body>
 </html>

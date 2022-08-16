@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  //background-color: rgb(19, 44, 140);
+  color: #dedede;
+  font-weight: 100;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  border-radius: 20px;
+  background-color: rgb(66, 23, 53);
+  border: 1px solid transparent;
+  color: #a8a8a8;
+  height: 30px;
+  padding: 10px;
+}
+
+.login {
+
+    h1 {
+      margin: 20px;
+      font-weight: 300;
+      color: #b9b9b9;
+    }
+    h2 {
+      font-weight: 100;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+        #loginForm {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        }
+
+        #registerForm {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        }
+    }
+}
