@@ -71,6 +71,11 @@ input {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+
+  padding: 20px;
+  box-shadow: 0 0 10px 10px rgba(1, 1, 1, 0.307);
+  border-radius: 20px;
+  background-color: rgba(1, 1, 1, 0.225);
 }
 .login section #registerForm {
   display: -webkit-box;
@@ -87,4 +92,9 @@ input {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+
+  padding: 20px;
+  box-shadow: 0 0 10px 10px rgba(1, 1, 1, 0.307);
+  border-radius: 20px;
+  background-color: rgba(1, 1, 1, 0.225);
 }
