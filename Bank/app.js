@@ -61,3 +61,7 @@ async function createAccount (account) {
         return {error: error.message || 'Unknown error'};
     }
 }
+async function login() {
+    const loginForm = document.getElementById('loginForm')
+    const user = loginForm.user.value;
+}
