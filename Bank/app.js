@@ -65,3 +65,11 @@ async function login() {
     const loginForm = document.getElementById('loginForm')
     const user = loginForm.user.value;
 }
+async function getAccount(user) {
+    try {
+        const response = await fetch('//localhost:5000/api/accounts/' + encodeURIComponent(user));
+        return await response.json();
+    } catch (error) {
+        return { error: error.message || 'Unknown error' };
+    }
+}
