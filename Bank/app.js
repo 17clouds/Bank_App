@@ -64,6 +64,14 @@ async function createAccount (account) {
 async function login() {
     const loginForm = document.getElementById('loginForm')
     const user = loginForm.user.value;
+    const data = await getAccount(user);
+
+    if (data.error) {
+        return console.log('loginError', data.error);
+    }
+
+    account = data;
+    navigate('/dashboard');
 }
 async function getAccount(user) {
     try {
